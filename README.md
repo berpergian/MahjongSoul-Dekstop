@@ -2,7 +2,7 @@
 
 ![Mahjong Soul Logo](https://mahjongsoul.yo-star.com/img/Mahjong_logo.d393a548.png)
 
-Dekstop version of Mahjong Soul English Game for Windows
+(Unofficial) Dekstop version of Mahjong Soul English Game for Windows
 
 ## Usage
 
