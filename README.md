@@ -1,17 +1,41 @@
 # Mahjong Soul Dekstop
 
 ![Mahjong Soul Logo](https://mahjongsoul.yo-star.com/img/Mahjong_logo.d393a548.png)
-Dekstop version of Mahjong Soul English Game
+
+Dekstop version of Mahjong Soul English Game for Windows
+
+## Usage
+
+To run this repository you'll need [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Install dependencies
+$ npm install
+# Run the app
+$ npm start
+```
+
+### Configuration
+
+If you are playing CN or JP version, you can change the `src` attribute of the `webview` in `index.html` file with
+
+```bash
+# For JP
+https://game.mahjongsoul.com/
+# For CN
+https://majsoul.union-game.com/0/
+```
 
 ## Built With
 
-* [Electron](https://electronjs.org/) - The WebApp Framework used
-* [ionicons](https://ionicons.com/v2/) - Icon Template
+* [Electron](https://electronjs.org/) - The WebApp based Javascript Framework used
+* [ionicons](https://ionicons.com/v2/) - Icon Templates
 
 ## To-Do List
 
 * Resizeable/responsive window
 * Better design
+* Installer & Portable release
 
 ## License
 
