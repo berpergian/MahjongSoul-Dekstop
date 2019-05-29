@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/ioniconsv2/css/ionicons.min.css">
+    </head>
+    <body>
+        <div id="menu-bar">
+            <div class="title">Mahjong Soul<span id="title-version"></span></div>
+            <div class="buttons left">
+                <span id="cache-btn" class="ion-trash-b"></span>
+                <span id="cookies-btn" class="ion-android-exit"></span>
+            </div>
+            <div class="buttons right">
+                <span id="reload-btn" class="ion-loop"></span>
+                <span id="min-btn" class="ion-minus-round"></span>
+                <span id="close-btn" class="ion-close-round""></span>
+            </div>
+        </div>
+
+        <div id="views">
+            <webview id="view" class="page" src="https://mahjongsoul.game.yo-star.com/" style="width: 100%; height: 720px;" autosize="on"></webview>
+            <div class = "indicator"></div>
+         </webview>
+        </div>
+    </body>
+</html>
+
+<script>
+    // You can also require other files to run in this process
+    require('./assets/js/renderer.js')
+</script>

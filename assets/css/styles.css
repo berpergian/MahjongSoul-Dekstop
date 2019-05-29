@@ -1,0 +1,92 @@
+/* Basic reset styles */
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+body {
+	border: 1px solid #749dc5;
+	border-top: none;
+}
+
+div#menu-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 24px;
+	width: 100%;
+	background: #FFA500; /*FF8C00*/
+	border-bottom: 1px solid #8593ad;
+	font-weight: bold;
+	-webkit-app-region: drag;
+	transition: top 340ms ease-out;
+	z-index: 765;
+}
+
+#menu-bar .title {
+	font-family: sans-serif;
+	font-size: 15px;
+	padding: 3px;
+	text-align: center;
+	color: #616161;
+	text-shadow: 0 0 2px rgb(255, 248, 237);
+}
+
+#menu-bar .buttons {
+	position: absolute;
+	top: 0;
+
+	-webkit-app-region: no-drag;
+}
+
+#menu-bar .buttons.right {
+	right: 0;
+	margin-right: 6px;
+	font-size: 0;
+}
+
+#menu-bar .buttons.left {
+	left: 0;
+	margin-left: 6px;
+	font-size: 0;
+}
+
+#menu-bar .buttons.right > span {
+	margin-right: 2px;
+}
+
+#menu-bar .buttons.left > span {
+	margin-left: 2px;
+}
+
+#menu-bar .buttons > span {
+	padding: 4px 5px 0px 4px;
+	display: inline-block;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.1);
+	font-size: 17px;
+	width: 22px;
+	overflow: hidden;
+	color: #7d776b;
+}
+
+#menu-bar .buttons > span:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#views {
+	padding-top: 24px;
+}
