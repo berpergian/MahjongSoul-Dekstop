@@ -1,6 +1,6 @@
 {
   "name": "MahjongSoulDesktop",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Simple Desktop Application for Mahjong Soul English version",
   "main": "main.js",
   "scripts": {
