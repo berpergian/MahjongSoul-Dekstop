@@ -33,7 +33,7 @@ https://majsoul.union-game.com/0/
 
 ## To-Do List
 
-* Resizeable/responsive window
+* ~~Resizeable/responsive window~~
 * Better design
 * Installer & Portable release
 
