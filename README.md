@@ -28,8 +28,8 @@ https://majsoul.union-game.com/0/
 
 ## Built With
 
-* [Electron](https://electronjs.org/) - The WebApp based Javascript Framework used
-* [ionicons](https://ionicons.com/v2/) - Icon Templates
+* [Electron](https://electronjs.org/) - The WebApp based Javascript Framework
+* [ionicons](https://ionicons.com/) - Open Source Icons Template
 
 ## To-Do List
 
@@ -44,5 +44,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * https://mahjongsoul.yo-star.com/#/
-* https://github.com/JscramblerBlog/browser-demo
+* https://github.com/cba85/electron-webview
+* https://github.com/klombomb/browser-demo
 * https://github.com/shinycolors/shinycwp
