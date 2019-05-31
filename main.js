@@ -1,13 +1,20 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, remote} = require('electron')
+
+var path = require('path');
+var fs = require("fs");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+let initPath
 
 function createWindow () {
+  initPath = path.join(app.getPath('userData'), "init.json");
+  var data = loadWindowData();
+
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow((data && data.bounds)  ? data.bounds : {
     width: 1024,
     height: 720,
     webPreferences: {
@@ -19,7 +26,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-  mainWindow.setResizable(false);
+  //mainWindow.setResizable(false);
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 
@@ -32,6 +39,21 @@ function createWindow () {
   })
 }
 
+function loadWindowData () {
+  var data;
+  try {
+    data = JSON.parse(fs.readFileSync(initPath, 'utf8'));
+  }
+  catch(e) {
+  }
+
+  return data;
+}
+
+function saveWindowData (data) {
+  fs.writeFileSync(initPath, JSON.stringify(data));
+}
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -41,6 +63,21 @@ app.on('ready', createWindow)
 app.on('window-all-closed', function () {
   // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
+
+  var sizeWindow = mainWindow.getContentBounds();
+
+  var data = {
+    bounds: {
+      width: sizeWindow['width'],
+      height: sizeWindow['height'],
+      webPreferences: {
+        nodeIntegration: true,
+        webviewTag: true
+      },
+      frame: false
+    }
+  };
+  saveWindowData(data);
   if (process.platform !== 'darwin') app.quit()
 })
 
