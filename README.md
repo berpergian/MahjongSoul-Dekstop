@@ -4,6 +4,10 @@
 
 (Unofficial) Dekstop version of Mahjong Soul English Game for Windows
 
+## What's Mahjong Soul?
+
+Mahjong Soul is a Japanese mahjong board game developed by CatFood Studio and published by Yostar Games (JP & Global)
+
 ## Usage
 
 To run this repository you'll need [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
@@ -23,12 +27,12 @@ If you are playing CN or JP version, you can change the `src` attribute of the `
 # For JP
 https://game.mahjongsoul.com/
 # For CN
-https://majsoul.union-game.com/0/
+https://www.majsoul.com/1/
 ```
 
 ## Built With
 
-* [Electron](https://electronjs.org/) - The WebApp based Javascript Framework
+* [ElectronJS](https://electronjs.org/) - The WebApp based Javascript Framework
 * [ionicons](https://ionicons.com/) - Open Source Icons Template
 
 ## To-Do List
